@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./tailwind/output.css">
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+    </style>
+    <title>ماهان سرور</title>
+</head>
+
+<body dir="rtl" class="font-yekan">
+    <section class="pb-20 bg-gradient-to-br from-[#1524ba] via-[#1524ba] to-[#0c1258]">
+        <header class="container pt-12 pb-2">
+            <div
+                class="flex md:flex-row flex-col justify-between items-center gap-y-6 px-7 py-4 bg-white md:rounded-full rounded-2xl">
+                <img src="./assets/images/logo.png" class="lg:w-36 w-32 h-fit">
+                <div class="flex flex-wrap justify-center lg:gap-6 md:gap-4 gap-3 lg:text-base text-sm">
+                    <a href="https://mahanserver.net/">صفحه اصلی</a>
+                    <a href="#" class="text-[#1c23d1] font-semibold border-solid border-[#1c23d1] border-b-2">تخفیف
+                        1401</a>
+                    <a href="https://mahanserver.net/vps">سرور مجازی</a>
+                    <a href="https://mahanserver.net/dedicated-server">سرور اختصاصی</a>
+                    <a href="https://mahanserver.net/web-hosting">میزبانی وب</a>
+                    <a href="https://mahanserver.net/colocations">کولوکیشن</a>
+                </div>
+                <div class="flex items-center lg:pl-0 md:pl-4">
+                    <div class="flex flex-col items-end w-fit">
+                        <span
+                            class="w-fit px-3 pt-1.5 pb-1 bg-[#1524ba] text-white lg:text-sm text-xs rounded-r-full rounded-tl-full">تماس
+                            با ما</span>
+                        <span class="lg:text-sm text-xs font-light">۰۲۱-<span
+                                class="lg:text-xl text-lg font-medium">۷۱۰۵۷۶۱۹</span></span>
+                    </div>
+                    <img src="./assets/icons/phone.png" class="lg:w-12 w-10 h-fit mr-3">
+                </div>
+            </div>
+        </header>
+        <div class="container relative flex items-start lg:justify-center justify-between">
+            <div class="absolute inset-0 bg-[url('../assets/images/server.png')] bg-cover mix-blend-multiply"></div>
+            <div class="relative flex flex-col items-center lg:w-[40%] w-[60%]">
+                <img src="./assets/images/salenomobarak.png" class="select-none">
+                <div
+                    class="lg:w-[70%] w-full px-4 py-8 bg-gradient-to-b from-transparent to-[#1325e7] rounded-3xl shadow-2xl">
+                    <p class="lg:leading-9 leading-7 text-center text-white lg:text-lg text-base">
+                        <span class="lg:text-3xl text-2xl font-semibold">فرا رسیدن سال جدید</span>
+                        را به مشتریان عزیز تبـریـک مـی‌گـوییم!
+                    </p>
+                </div>
+                <a href="#discounts"
+                    class="absolute -bottom-5 px-4 py-1.5 bg-[#00a651] text-white lg:text-base text-sm rounded-full">همین
+                    حالا عیدی بگیر :)</a>
+            </div>
+            <img src="./assets/images/tong.png" class="w-[45%] -mr-8 z-[1] lg:mt-0  mt-10">
+        </div>
+    </section>
+    <section id="discounts" class="pb-16 bg-[#192adc] text-white">
+        <div class="container mb-24">
+            <div class="flex lg:flex-row flex-col justify-between gap-y-4 md:py-10 py-8">
+                <h2 class="flex lg:text-5xl md:text-4xl text-2xl font-medium">
+                    این
+                    <img src="./assets/images/takhfif.png" class="lg:w-32 md:w-28 w-24 h-fit mx-3 select-none">
+                    تکرار نخواهد شد!
+                </h2>
+                <div class="flex flex-col items-end">
+                    <h5 class="flex justify-end w-full text-left text-lg font-bold mb-5">
+                        <img src="./assets/icons/time.png" class="h-fit ml-2">
+                        مانده تا پایان جشنواره
+                    </h5>
+                    <div class="timer flex" dir="ltr">
+                        <div class="flex flex-col items-center mr-6">
+                            <div class="day mb-4">
+                                <span class="bg-[#0f1dad] text-white px-3 py-2 text-lg rounded-md">0</span>
+                                <span class="bg-[#0f1dad] text-white px-3 py-2 text-lg rounded-md">0</span>
+                            </div>
+                            <span>روز</span>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <div class="hours mb-4">
+                                <span class="bg-[#0f1dad] text-white px-3 py-2 text-lg rounded-md">0</span>
+                                <span class="bg-[#0f1dad] text-white px-3 py-2 text-lg rounded-md">0</span>
+                            </div>
+                            <span>ساعت</span>
+                        </div>
+                        <span class="text-3xl mx-1">:</span>
+                        <div class="flex flex-col items-center">
+                            <div class="minutes mb-4">
+                                <span class="bg-[#0f1dad] text-white px-3 py-2 text-lg rounded-md">0</span>
+                                <span class="bg-[#0f1dad] text-white px-3 py-2 text-lg rounded-md">0</span>
+                            </div>
+                            <span>دقیقه</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex lg:flex-row flex-col items-center justify-between gap-y-12 md:pr-28 pr-24">
+                <div class="relative w-fit">
+                    <img src="./assets/images/server1.png" class="absolute -right-28 bottom-0  h-full">
+                    <div class="relative z-[1] flex flex-col items-center w-fit py-8 px-6 bg-white/90 rounded-3xl">
+                        <h4 class="text-gray-700 text-4xl font-extrabold">۳۰% تخفیف</h4>
+                        <span class="text-gray-700 mb-3">خرید هــاست وردپــرس</span>
+                        <span class="bg-[#192adc] text-white px-4 py-2 rounded-full">
+                            کدتخفیف:
+                            <span>Server۱۴۰۲</span>
+                        </span>
+                        <button
+                            class="absolute -bottom-3 flex justify-center w-32 px-3 py-1.5 bg-[#00a651] text-sm rounded-full" onclick="copyCode(event, 'Server۱۴۰۲')">
+                            <img src="./assets/icons/copy.png" class="w-5 h-fit ml-2">
+                            کپی کد!
+                        </button>
+                    </div>
+                </div>
+                <div class="relative w-fit">
+                    <img src="./assets/images/server2.png" class="absolute -right-28 bottom-0  h-full">
+                    <div class="relative z-[1] flex flex-col items-center w-fit py-8 px-6 bg-white/90 rounded-3xl">
+                        <h4 class="text-gray-700 text-4xl font-extrabold">۳۰% تخفیف</h4>
+                        <span class="text-gray-700 mb-3">خرید هــاست وردپــرس</span>
+                        <span class="bg-[#192adc] text-white px-4 py-2 rounded-full">
+                            کدتخفیف:
+                            <span>Server۱۴۰۲</span>
+                        </span>
+                        <button
+                            class="absolute -bottom-3 flex justify-center w-32 px-3 py-1.5 bg-[#00a651] text-sm rounded-full" onclick="copyCode(event, 'Server۱۴۰۲')">
+                            <img src="./assets/icons/copy.png" class="w-5 h-fit ml-2">
+                            کپی کد!
+                        </button>
+                    </div>
+                </div>
+                <div class="relative w-fit">
+                    <img src="./assets/images/server3.png" class="absolute -right-28 bottom-0  h-full">
+                    <div class="relative z-[1] flex flex-col items-center w-fit py-8 px-6 bg-white/90 rounded-3xl">
+                        <h4 class="text-gray-700 text-4xl font-extrabold">۳۰% تخفیف</h4>
+                        <span class="text-gray-700 mb-3">خرید هــاست وردپــرس</span>
+                        <span class="bg-[#192adc] text-white px-4 py-2 rounded-full">
+                            کدتخفیف:
+                            <span>Server۱۴۰۲</span>
+                        </span>
+                        <button
+                            class="absolute -bottom-3 flex justify-center w-32 px-3 py-1.5 bg-[#00a651] text-sm rounded-full" onclick="copyCode(event, 'Server۱۴۰۲')">
+                            <img src="./assets/icons/copy.png" class="w-5 h-fit ml-2">
+                            کپی کد!
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container flex">
+            <img src="./assets/images/server4.png" class="lg:block hidden lg:w-44 sm:w-24 w-16 h-fit">
+            <div class="flex flex-col w-full mr-4">
+                <div class="flex items-center gap-6 mb-14">
+                    <img src="./assets/images/server4.png" class="lg:hidden block lg:w-44 sm:w-20 w-16 h-fit">
+                    <div>
+                        <h4 class="lg:text-5xl md:text-4xl text-2xl font-bold mb-4">
+                            چـــرا
+                            <span class="font-extralight">ماهان؟</span>
+                        </h4>
+                        <span class="font-extralight">چرا بهترین شرکت‌ها ما را انتخاب کرده‌اند؟</span>
+                    </div>
+                </div>
+                <div class="flex lg:flex-row flex-col item gap-x-8 gap-y-14">
+                    <div
+                        class="flex flex-col items-center lg:w-[25%] w-full p-6 bg-[#182adf] rounded-2xl shadow-[0_0_30px_rgba(0,0,0,0.2)]">
+                        <img src="./assets/icons/support.png" class="-mt-14 mb-3">
+                        <h4 class="mb-1.5 font-semibold text-center">پشتیبانی ۲۴ ساعته</h4>
+                        <p class="text-center text-sm font-extralight">
+                            پشتیبانی و همراهی شما در هر ساعت از شبانه روز جهت پاسخگویی و رفع مشکلات احتمالی
+                        </p>
+                    </div>
+                    <div
+                        class="flex flex-col items-center lg:w-[25%] w-full p-6 bg-[#182adf] rounded-2xl shadow-[0_0_30px_rgba(0,0,0,0.2)]">
+                        <img src="./assets/icons/payment.png" class="-mt-14 mb-3">
+                        <h4 class="mb-1.5 font-semibold text-center">پرداخت آنلاین و تحویل آنی</h4>
+                        <p class="text-center text-sm font-extralight">
+                            تحویل آنی سرویس ها بعد از پرداخت فاکتور
+                        </p>
+                    </div>
+                    <div
+                        class="flex flex-col items-center lg:w-[25%] w-full p-6 bg-[#182adf] rounded-2xl shadow-[0_0_30px_rgba(0,0,0,0.2)]">
+                        <img src="./assets/icons/backup.png" class="-mt-14 mb-3">
+                        <h4 class="mb-1.5 font-semibold text-center">بکاپ روزانه، هفتگی، ماهیانه</h4>
+                        <p class="text-center text-sm font-extralight">
+                            گرفتن بکاپ در زمانهای مشخص از سرویس های هاستینگ
+                        </p>
+                    </div>
+                    <div
+                        class="flex flex-col items-center lg:w-[25%] w-full p-6 bg-[#182adf] rounded-2xl shadow-[0_0_30px_rgba(0,0,0,0.2)]">
+                        <img src="./assets/icons/uptime.png" class="-mt-14 mb-3">
+                        <h4 class="mb-1.5 font-semibold text-center">آپتایم ۹۹درصد سرویس‌ها</h4>
+                        <p class="text-center text-sm font-extralight">
+                            پایداری بالای سرورها و ارائه سرویس با یهترین کیفیت بر روی بهترین سخت افزارها
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="pb-16">
+        <div class="container flex flex-col items-center">
+            <div class="flex flex-col items-center pt-12 pb-6">
+                <h2 class="lg:text-5xl md:text-4xl text-2xl font-bold lg:mb-4 mb-3">
+                    <span class="font-extralight">برخی</span>
+                    مشتریان ما
+                </h2>
+                <hr class="w-32 border-[#192adc] border-2 lg:mb-5 mb-4">
+                <span class="md:text-base text-sm font-extralight text-center">کدام برند‌ها، ماهان‌سرور را انتخاب‌
+                    کرده‌اند...</span>
+            </div>
+            <div class="flex flex-wrap lg:justify-between justify-center items-center gap-8 w-full mb-6">
+                <img src="./assets/images/brands/1.png" class="lg:w-28 sm:w-20 w-16 h-fit">
+                <img src="./assets/images/brands/2.png" class="lg:w-36 sm:w-28 w-24 h-fit">
+                <img src="./assets/images/brands/3.png" class="lg:w-36 sm:w-28 w-24 h-fit">
+                <img src="./assets/images/brands/4.png" class="lg:w-36 sm:w-28 w-24 h-fit">
+                <img src="./assets/images/brands/5.png" class="lg:w-36 sm:w-28 w-24 h-fit">
+                <img src="./assets/images/brands/6.png" class="lg:w-28 sm:w-20 w-16 h-fit">
+            </div>
+            <hr class="md:w-[70%] w-[90%] border-[#070d4a] border-2 lg:mb-5 mb-4">
+            <div class="flex md:flex-row flex-col items-center justify-between gap-y-6 md:w-[70%] w-[90%]">
+                <h1 class="lg:text-3xl md:text-2xl text-xl text-[#141414] font-black leading-10">
+                    تخفیفت رو
+                    <span class="lg:text-5xl md:text-4xl text-3xl">پیدا نکردی؟</span>
+                </h1>
+                <div class="flex items-center">
+                    <div class="flex flex-col items-end w-fit">
+                        <span
+                            class="w-fit px-3 pt-1.5 pb-1 bg-[#1524ba] text-white lg:text-sm text-xs rounded-r-full rounded-tl-full">تماس
+                            با ما</span>
+                        <span href="#" class="lg:text-base text-sm font-light">۰۲۱-<span
+                                class="lg:text-2xl text-xl font-medium">۷۱۰۵۷۶۱۹</span></span>
+                    </div>
+                    <img src="./assets/icons/phone.png" class="lg:w-12 w-10 h-fit mr-3">
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="pb-16 bg-gradient-to-br from-[#2b0495] to-[#162ee8] text-white">
+        <div class="container flex flex-wrap justify-center gap-10 py-11">
+            <div class="flex flex-col gap-3">
+                <h5 class="lg:text-3xl text-2xl font-semibold mb-3">میزبانی وب</h5>
+                <a href="https://mahanserver.net/web-hosting/cpanel-iran-host"
+                    class="lg:text-base text-sm font-extralight">میزبانی وب ایران سیپنل</a>
+                <a href="https://mahanserver.net/web-hosting/europe-cpanel-host"
+                    class="lg:text-base text-sm font-extralight">میزبانی وب خارج سیپنل</a>
+                <a href="https://mahanserver.net/web-hosting/wordpress-iran"
+                    class="lg:text-base text-sm font-extralight">میزبانی وب وردپرس ایران</a>
+                <a href="https://mahanserver.net/web-hosting/wordpress-europe"
+                    class="lg:text-base text-sm font-extralight">میزبانی وب دانلود</a>
+                <a href="https://mahanserver.net/web-hosting/download"
+                    class="lg:text-base text-sm font-extralight">میزبانی وب دانلود پر حجم</a>
+                <a href="https://mahanserver.net/web-hosting/high-traffic"
+                    class="lg:text-base text-sm font-extralight">میزبانی وب پربازدید</a>
+                <a href="https://mahanserver.net/web-hosting/python-host"
+                    class="lg:text-base text-sm font-extralight">میزبانی پایتون</a>
+                <a href="https://mahanserver.net/web-hosting/reseller-iran"
+                    class="lg:text-base text-sm font-extralight">میزبانی وب ایران</a>
+                <a href="https://mahanserver.net/web-hosting/reseller-europe"
+                    class="lg:text-base text-sm font-extralight">نمایندگی میزبانی وب خارج</a>
+                <a href="https://mahanserver.net/web-hosting/iran-windows-host"
+                    class="lg:text-base text-sm font-extralight">میزبانی وب ویندوز ایران</a>
+            </div>
+            <div class="flex flex-col gap-3">
+                <h5 class="lg:text-3xl text-2xl font-semibold mb-3">سرور مجازی</h5>
+                <a href="https://mahanserver.net/vps/iran-vps" class="lg:text-base text-sm font-extralight">سرور مجازی
+                    ایران</a>
+                <a href="https://mahanserver.net/vps/france-vps" class="lg:text-base text-sm font-extralight">سرور مجازی
+                    فرانسه</a>
+                <a href="https://mahanserver.net/vps/netherlands-vps" class="lg:text-base text-sm font-extralight">سرور
+                    مجازی هلند</a>
+                <a href="https://mahanserver.net/vps/binance" class="lg:text-base text-sm font-extralight">سرور مجازی
+                    بایننس</a>
+                <a href="https://mahanserver.net/vps/encoding" class="lg:text-base text-sm font-extralight">سرور مجازی
+                    انکد</a>
+                <a href="https://mahanserver.net/vps/germany-vps" class="lg:text-base text-sm font-extralight">سرور
+                    مجازی آلمان</a>
+                <a href="https://mahanserver.net/vps/webinar" class="lg:text-base text-sm font-extralight">سرور مجازی
+                    وبینار</a>
+                <a href="https://mahanserver.net/vps/gpu" class="lg:text-base text-sm font-extralight">سرور GPU</a>
+            </div>
+            <div class="flex flex-col gap-3">
+                <h5 class="lg:text-3xl text-2xl font-semibold mb-3">سرور اختصاصی</h5>
+                <a href="https://mahanserver.net/dedicated-server/iran"
+                    class="lg:text-base text-sm font-extralight">سرور اختصاصی ایران</a>
+                <a href="https://mahanserver.net/dedicated-server/usa" class="lg:text-base text-sm font-extralight">سرور
+                    اختصاصی آمریکا</a>
+                <a href="https://mahanserver.net/dedicated-server/netherlands"
+                    class="lg:text-base text-sm font-extralight">سرور اختصاصی هلند</a>
+                <a href="https://mahanserver.net/dedicated-server/germany"
+                    class="lg:text-base text-sm font-extralight">سرور اختصاصی آلمان</a>
+                <a href="https://mahanserver.net/dedicated-server/france"
+                    class="lg:text-base text-sm font-extralight">سرور اختصاصی فرانسه</a>
+            </div>
+            <div class="flex flex-col gap-3">
+                <h5 class="lg:text-3xl text-2xl font-semibold mb-3">سایر خدمات</h5>
+                <a href="https://mahanserver.net/OurProducts/domain" class="lg:text-base text-sm font-extralight">ثبت
+                    دامنه</a>
+                <a href="https://mahanserver.net/licenses" class="lg:text-base text-sm font-extralight">لایسنس</a>
+                <a href="https://mahanserver.net/colocations" class="lg:text-base text-sm font-extralight">کولوکیشن</a>
+            </div>
+            <div class="flex flex-col gap-3">
+                <h5 class="lg:text-3xl text-2xl font-semibold mb-3">ارتباط با ما</h5>
+                <a href="https://mahanserver.net/about-us" class="lg:text-base text-sm font-extralight">درباره ما</a>
+                <a href="https://mahanserver.net/terms-of-services" class="lg:text-base text-sm font-extralight">شرایط
+                    استفاده از خدمات</a>
+                <a href="https://mahanserver.net/contact-us" class="lg:text-base text-sm font-extralight">تماس با ما</a>
+            </div>
+            <div class="flex flex-col gap-4 py-9">
+                <a href="https://trustseal.enamad.ir/?id=122598&code=K02GArfAxLZ5On1XK37U"><img
+                        src="./assets/images/namad1.png" class="lg:w-36 w-24 rounded-lg"></a>
+                <a href="https://tehran.irannsr.org/index.php?module=web_directory&wd_id=104366&ctp_id=1086&id=21968"><img
+                        src="./assets/images/namad2.png" class="lg:w-36 w-24 rounded-lg"></a>
+            </div>
+        </div>
+        <div class="container flex lg:flex-row flex-col items-center justify-center gap-x-8 gap-y-3 mb-6">
+            <span>شبکه‌های اجتماعی</span>
+            <div class="flex lg:gap-6 gap-4">
+                <a href="#">
+                    <img src="./assets/icons/facebook.svg" class="lg:w-6 w-5 h-fit invert">
+                </a>
+                <a href="#">
+                    <img src="./assets/icons/instagram.svg" class="lg:w-6 w-5 h-fit invert">
+                </a>
+                <a href="#">
+                    <img src="./assets/icons/twitter.svg" class="lg:w-6 w-5 h-fit invert">
+                </a>
+                <a href="#">
+                    <img src="./assets/icons/telegram.svg" class="lg:w-6 w-5 h-fit invert">
+                </a>
+            </div>
+        </div>
+        <hr class="container w-full border-[#423dd1] border-2 mb-9">
+        <div class="container flex lg:flex-row flex-col justify-between gap-y-8">
+            <div class="lg:w-[65%] w-full">
+                <h5 class="lg:text-3xl text-2xl font-semibold lg:mb-4 mb-3">درباره ما</h5>
+                <p class="lg:text-base text-sm font-extralight">
+                    ماهان سرور دارای ۱۰ سال تجربه فعالیت در زمینه خدمات ثبت دامنه، میزبانی وب، سرور مجازی، سرور اختصاصی
+                    و کولوکیشن در ایران و سراسر جهان می‌باشد. ما همواره تلاش کردیم در ارائه خدمات به مشتریان گرامی
+                    بهترین باشیم.
+                </p>
+            </div>
+            <div class="lg:w-[35%] w-full">
+                <h5 class="lg:text-3xl text-2xl font-semibold lg:mb-4 mb-3">تماس با ماهان سرور</h5>
+                <p class="lg:text-base text-sm font-extralight">
+                    مرکز ارتباط تلفنی: ۰۲۱۷۱۰۵۷۶۱۹
+                </p>
+                <p class="lg:text-base text-sm font-extralight">
+                    رایانامه الکترونیکی: contact@mahanserver.com
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+<script>
+    function copyCode(event, code){
+        navigator.clipboard.writeText(code);
+        event.target.innerHTML = 'کپی شد!'
+    }
+</script>
+
+<script>
+    var countDownDate = new Date("April 3, 2023 01:40:00").getTime();
+
+    var x = setInterval(function () {
+        var now = new Date().getTime();
+
+        var distance = countDownDate - now;
+
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+
+        days = days.toString().split('');
+        hours = hours.toString().split('');
+        minutes = minutes.toString().split('');
+        if (days.length == 1) {
+            days.unshift("0");
+        }
+        if (hours.length == 1) {
+            hours.unshift("0");
+        }
+        if (minutes.length == 1) {
+            minutes.unshift("0");
+        }
+
+        document.querySelector(".timer .day span:first-child").innerHTML = days[0];
+        document.querySelector(".timer .day span:last-child").innerHTML = days[1];
+        document.querySelector(".timer .hours span:first-child").innerHTML = hours[0];
+        document.querySelector(".timer .hours span:last-child").innerHTML = hours[1];
+        document.querySelector(".timer .minutes span:first-child").innerHTML = minutes[0];
+        document.querySelector(".timer .minutes span:last-child").innerHTML = minutes[1];
+
+        if (distance < 0) {
+            clearInterval(x);
+            document.querySelector(".timer .day span:first-child").innerHTML = 0;
+            document.querySelector(".timer .day span:last-child").innerHTML = 0;
+            document.querySelector(".timer .hours span:first-child").innerHTML = 0;
+            document.querySelector(".timer .hours span:last-child").innerHTML = 0;
+            document.querySelector(".timer .minutes span:first-child").innerHTML = 0;
+            document.querySelector(".timer .minutes span:last-child").innerHTML = 0;
+        }
+    }, 1000);
+</script>
+
+</html>
